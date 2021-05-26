@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, user-scale=no" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Ip.io</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="section-one">
+        <div class="title">IP Address Tracker</div>
+        <div class="search">
+          <input type="text" id="ip-address" placeholder="101.201.174.101" />
+          <button id="button"><i class="bx bxs-chevron-right"></i></button>
+        </div>
+        <div class="card">
+          <div class="card-data">
+            <small>IP ADDRESS</small>
+            <p id="ip"></p>
+          </div>
+          <div class="card-data">
+            <small>CONTINENT</small>
+            <p id="continent"></p>
+          </div>
+          <div class="card-data">
+            <small>COUNTRY</small>
+            <p id="country"></p>
+          </div>
+          <div class="card-data">
+            <small>DISTRICT</small>
+            <p id="district"></p>
+          </div>
+          <div class="card-data">
+            <small>CITY</small>
+            <p id="location"></p>
+          </div>
+          <div class="card-data">
+            <small>REGION</small>
+            <p id="region"></p>
+          </div>
+          <div class="card-data">
+            <small>ZIP-CODE</small>
+            <p id="zip"></p>
+          </div>
+          <div class="card-data">
+            <small>TIMEZONE</small>
+            <p id="time-zone"></p>
+          </div>
+          <div class="card-data">
+            <small>AS</small>
+            <p id="as"></p>
+          </div>
+          <div class="card-data">
+            <small>AS NAME</small>
+            <p id="as-name"></p>
+          </div>
+          <div class="card-data">
+            <small>ISP</small>
+            <p id="isp"></p>
+          </div>
+          <div class="card-data">
+            <small>HOSTING</small>
+            <p id="hosting"></p>
+          </div>
+          <div class="card-data">
+            <small>PROXY</small>
+            <p id="proxy"></p>
+          </div>
+        </div>
+      </section>
+      <section id="map"></section>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

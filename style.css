@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 0.6fr 1fr;
+}
+.section-one {
+  background: url("./images/pattern-bg.png");
+}
+.title {
+  text-align: center;
+  padding: 1em 0 1em 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+}
+.search {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+  width: 80%;
+}
+input {
+  flex: 1;
+  padding: 13px 15px;
+  border: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(0, 0%, 17%);
+}
+button {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 13px 0;
+  color: #fff;
+  background: hsl(0, 0%, 17%);
+  border: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+input:focus,
+button:focus {
+  outline: 0;
+}
+.card {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 10px 3em;
+  border-radius: 10px;
+  z-index: 10;
+  width: 80%;
+  height: 250px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.card-data {
+  text-align: center;
+}
+p {
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(0, 0%, 17%);
+}
+small {
+  font-weight: 400;
+  font-size: 0.6rem;
+  color: hsl(0, 0%, 59%);
+}
+.section-two {
+  background-color: #8a8a8a;
+}
+#map {
+  z-index: 1;
+}
